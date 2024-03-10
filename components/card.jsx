@@ -1,5 +1,5 @@
 import styles from "../src/App.module.css"
-const Card = () =>{
+const Card = ({onButtonClick}) =>{
     const buttons = [ 
     "C",
     "1",
@@ -22,7 +22,7 @@ const Card = () =>{
         <div className="buttonContainer">
             {
                 buttons.map(button => (
-                    <button className={styles.button}>{button}</button>
+                    <button className={styles.button} onClick={() => onButtonClick(button)}>{button}</button>
                 ))
             }
         </div>

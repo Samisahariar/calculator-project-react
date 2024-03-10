@@ -1,6 +1,6 @@
 import styles from "../src/App.module.css"
-const Display = () =>{
-    return (<input type="text" className={styles.inputField}/>
+const Display = ( {displayValue} ) =>{
+    return (<input type="text" className={styles.inputField} readOnly value={displayValue}/>
         
     );
 }
