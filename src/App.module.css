@@ -1,21 +1,31 @@
-.calculator{
-    border: 2px solid rgba(224, 161, 161, 0.226);
-    width: 250px;
-    border-radius: 5px;
-
+.inputContainer{
+    background-color: aqua;
+    display: inline-block;
+    width: 100%;
 }
-.display{
-    margin: 10px;
-    width: 220px;
-    height: 40px;
+.inputField{
+    width: 90%;
+    min-width: 300px;
+    margin: 20px;
+    height: 50px;
+}
+.calculator{
+    width: 50%;
+    background-color: blue;
+    min-width: 300px;
 }
 .buttonContainer{
+    width: 100%;
+    min-width: 300px;
+    background-color: black;
     display: flex;
-    column-gap: 4px;
     justify-content: center;
+    flex-wrap: wrap;
+    
 }
 .button{
-    width: 50px;
-    height: 50px;
-    
+    height: 100px;
+    width: 222px;
+    font-size: 24px;
+    font-weight: 600;
 }

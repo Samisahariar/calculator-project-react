@@ -1,23 +1,17 @@
-import styles from "./App.module.css"
-import Display from "../components/display";
-import CardLIne  from "../components/Card";
+import Display from "../components/Display";
+import styles from "../src/App.module.css"
+import Card from "../components/Card"
 
-const App = () =>{
-  const buttons = [
-    ['C', 1, 2, 3],
-    ['+', 4, 5, 6],
-    ['-', 7, 8, 9],
-    ['*', 10, '=', 'AC']
-  ]
-  let id = 0
-  return(
+const App = () => {
+  return (
     <div className={styles.calculator}>
-      <Display></Display>
-      {
-        buttons.map(buttonline => <CardLIne key={id+1} buttonLine={buttonline}></CardLIne>)
-      }
-      
+      <div className={styles.inputContainer}>
+        <Display></Display>
+      </div>
+      <div className={styles.buttonContainer}>
+        <Card></Card>
+      </div>
     </div>
   );
 }
-export default App;
+export default App; 
